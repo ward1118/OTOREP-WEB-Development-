@@ -26,17 +26,39 @@ h1 {
     align-items: center;
 }
 
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/otorep_logo_only.png');
+    background-size: contain;   /* Fits the full logo cleanly */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.12;              /* Adjust this (0.05 - 0.20 works best for subtle watermark logos) */
+    pointer-events: none;       /* Allows clicks to pass through to inputs */
+    z-index: 1;                 /* Sits above the background color */
+}
+
 .card {
     display: flex;
     height: 500px;
     width: 300px;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.75); 
     border-radius: 25px;
     padding: 2rem;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.card label {
+    align-self: flex-start;
+    width: 85%;
+    text-align: left;
 }
 
 input {

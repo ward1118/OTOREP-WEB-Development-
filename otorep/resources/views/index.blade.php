@@ -11,12 +11,13 @@
 
         <!-- Styles / Scripts -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/otorep_logo_only.png') }}">
     </head>
     <body>
         <div class="container">
             <div class="card">
-                <img src="{{ asset('assets/otorep_logo.png') }}" alt="Logo" class="logo"
-                    style="width: 200px; height: auto; margin-bottom: 20px;">
+                <img src="{{ asset('assets/otorep_logo_text.png') }}" alt="Logo" class="logo"
+                    style="width: 250px; height: auto; margin-bottom: 20px;">
                 <label for="username">EMAIL / USERNAME</label>
                 <input type="email" id="username" name="username" required>
                 <label for="password">PASSWORD</label>
@@ -25,6 +26,8 @@
                     <button type="submit">LOGIN</button>
                     <button type="submit">FORGOT PASSWORD</button>
                 </div>
+                <p>DON'T HAVE AN ACCOUNT YET?</p>
+                <p><a href="register.blade.php">SIGN UP NOW</a></p>
             </div>
         </div>
     </body>
