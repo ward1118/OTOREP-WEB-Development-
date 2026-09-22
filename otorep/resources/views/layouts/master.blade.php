@@ -15,11 +15,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="card">
-                <img src="{{ asset('assets/otorep_logo_text.png') }}" alt="Logo" class="logo"
-                    style="width: 250px; height: auto;">
-                    @yield('content')
-            </div>
+            @yield('content')
         </div>
     </body>
 </html>
