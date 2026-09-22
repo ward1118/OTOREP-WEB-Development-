@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1b195b;
     color: white;
@@ -7,6 +13,11 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px; 
 }
 
 h2 {
@@ -114,36 +125,79 @@ a {
 
 .dash_con {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #sidebar {
     height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(0, 0, 0, 0.737), 
+        rgba(3, 3, 3, 0.028)
+    );
+}
+
+.sidebar-btn {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    width: 100%;
+    border-radius: 0%;
+    align-items: center;
+    font-size: 18px;
+    margin: 0%;
+}
+
+#sidebar a {
+    text-decoration: none;
 }
 
 #content {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 1fr 4fr;
     color: black;
     gap: 30px;
-    margin: 30px;
+    padding: 30px;
+}
+
+.btn-logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    object-fit: contain;
 }
 
 #header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: span 4;
     color: white;
+    justify-content: space-between;
 }
 
-.status_card {
+.status-card {
     background-color: rgba(255, 255, 255, 0.75);
     text-align: center;
     border-radius: 10px;
+    padding: 20px;
+    align-content: center;
+}
+
+.status-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.status-count {
+    font-size: 40px;
 }
 
 #equipment {
@@ -153,4 +207,42 @@ a {
     grid-column-end: span 4;
     text-align: center;
     border-radius: 10px;
+    justify-items: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    text-align: left;
+    border-bottom: 1px solid #4a4d6b;
+    padding: 20px;
+}
+
+td:last-child, 
+th:last-child {
+    text-align: right;
+}
+
+table p, table h3, table h4 {
+    margin: 0px;
+}
+
+tbody td:nth-child(2) {
+    text-align: center;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.attention {
+    color: red;
+}
+
+.maintenance {
+    color: #8f6e0c;
 }

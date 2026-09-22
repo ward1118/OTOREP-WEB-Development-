@@ -17,3 +17,7 @@ Route::get('/forgot_password', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/devices', function () {
+    return view('devices');
+})->name('devices');

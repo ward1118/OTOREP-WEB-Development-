@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Dashboard - Otorep')
+@section('title', 'Devices - Otorep')
 
 @section('content')
     
@@ -8,12 +8,8 @@
         @include('layouts.sidebar')
         <div id="content">
             <div id="header">
-                <div id="header-text">
-                    <h1>DASHBOARD</h1>
-                    <h3 style="margin: 0px;">Computer Laboratory Monitoring</h3>
-                </div>
-                <img src="{{ asset('assets/profile.png') }}" alt="profile" id="profile"
-                        style="width: 50px; height: 50px; justify-self: end;">
+                <h1>DASHBOARD</h1>
+                <h3 style="margin: 0px;">Computer Laboratory Monitoring</h3>
             </div>
             <div class="status-card">
                 <img src="{{ asset('assets/computer.png') }}" alt="Computer" class="status-logo">
