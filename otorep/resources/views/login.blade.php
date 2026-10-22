@@ -8,6 +8,16 @@
         <img src="{{ asset('assets/otorep_logo_text.png') }}" alt="Logo" class="logo"
                     style="width: 250px; height: auto;">
         <h2>LOGIN</h2>
+        @if(session('error'))
+            <p class="error">
+                {{ session('error') }}
+            </p>
+        @endif
+        @if(session('success'))
+            <p>   
+                {{ session('success') }}
+            </p>
+        @endif
         <label for="username">EMAIL / USERNAME</label>
         <input type="email" id="username" name="username" required>
         <label for="password">PASSWORD</label>
