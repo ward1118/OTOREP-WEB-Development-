@@ -13,7 +13,11 @@
                     <h3 style="margin: 0px;">Computer Laboratory Monitoring</h3>
                 </div>
                 <img src="{{ asset('assets/profile.png') }}" alt="profile" id="profile"
-                        style="width: 50px; height: 50px; justify-self: end;">
+                        style="
+                        width: 50px;
+                        height: 50px;
+                        justify-self: end;
+                        cursor: pointer;">
             </div>
             <div class="status-card">
                 <img src="{{ asset('assets/computer.png') }}" alt="Computer" class="status-logo">
