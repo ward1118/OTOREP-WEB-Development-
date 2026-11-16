@@ -2,7 +2,7 @@
 
 @section('title', 'Verify - Otorep')
 
-@section('content')
+@section('body')
     
     <div class="card">
         <img src="{{ asset('assets/otorep_logo_text.png') }}" alt="Logo" class="logo"

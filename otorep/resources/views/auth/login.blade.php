@@ -2,7 +2,7 @@
 
 @section('title', 'Login - Otorep')
 
-@section('content')
+@section('body')
     <div class="auth_con">
         <img src="{{ asset('assets/otorep_logo.png') }}" alt="Logo" class="logo"
                     style="

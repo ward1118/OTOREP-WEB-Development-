@@ -1,16 +1,9 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title', 'Devices - Otorep')
 
 @section('content')
     
-    <div class="dash_con">
-        @include('layouts.sidebar')
-        <div id="content">
-            <div id="header">
-                <h1>DASHBOARD</h1>
-                <h3 style="margin: 0px;">Computer Laboratory Monitoring</h3>
-            </div>
             <div class="status-card">
                 <img src="{{ asset('assets/computer.png') }}" alt="Computer" class="status-logo">
                 <p>Total Computers</p>
@@ -79,7 +72,5 @@
                     </tr>
                 </table>
             </div>
-        </div>
-    </div>
-
+            
 @endsection
